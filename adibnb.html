@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("image/1.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">#73 East Third Street, New York. Open from 9am to 9pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Adi Bed &amp; Breakfast</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">關於Adi B&amp;B</span></h5>
+    <p> 這裡的房間每一個人每晚的價錢是77美元（含稅以及早餐），這裡的房間簡約，安靜而且非常乾淨，並且附有乾淨的床單，枕頭，棉被以及冷氣，還有免費的Wifi。如果你對更優惠的價格更有興趣的話，請參考我們以下的社區服務：
+我們每週一、三以及五都會免費發放食物給紐約曼哈頓的街友，時間為 9:15 am - 11:15 am 。如果你肯來幫忙，我們會提供給你每晚70元的優惠價格，幫忙幾天就優惠幾天！
+
+我們相信社區服務將會是你在紐約旅行中最難忘的回憶。
+
+如果要預約訂房，請 E-mail: <a href="adi108ny@yahoo.com">adi108ny@yahoo.com</a>
+
+
+
+</p>
+    <p></p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="image/2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong></strong></p>
+    <p><strong></strong></p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"></span></h5>
+  
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink"></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink"></div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+        <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p>
+    </div>  
+    <img src="image/3.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">我們在哪裡</span></h5>
+    <p>在Google地圖上找到我們：</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.364497356036!2d-73.99086980241933!3d40.72528318892381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259835c3ea725%3A0xb42b4f2fce85fce8!2zNzMgRSAzcmQgU3QsIE5ldyBZb3JrLCBOWSAxMDAwM-e-juWciw!5e0!3m2!1szh-TW!2stw!4v1495188202754" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p><span class="w3-tag">FYI!</span> </p>
+    <form action="mailto:lineageispig@gmail.com" method="post" enctype="text/plain">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="姓名" required name="姓名"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="人數" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="時間與日期" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="告訴我們的話" required name="告訴我們的話"></p>
+      <p><button class="w3-button w3-black" type="submit">送出</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+
+
+
+</body>
+</html>
